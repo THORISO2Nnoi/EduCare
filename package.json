@@ -1,27 +1,11 @@
 {
-<<<<<<< HEAD
   "name": "educare-backend",
   "version": "1.0.0",
-  "description": "Educare backend",
+  "description": "Educare Learner & Parent Backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.1",
-    "cors": "^2.8.5",
-    "body-parser": "^1.20.2",
-    "dotenv": "^16.3.1",
-    "jsonwebtoken": "^9.0.2",
-    "bcryptjs": "^2.4.3"
-=======
-  "name": "educare",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -34,15 +18,13 @@
     "url": "https://github.com/THORISO2Nnoi/EduCare/issues"
   },
   "homepage": "https://github.com/THORISO2Nnoi/EduCare#readme",
-  "description": "",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "body-parser": "^2.2.0",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.1",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.0"
->>>>>>> bfcb21be12b7f2394e850c1e052ca1e3c575052a
+    "bcryptjs": "^2.4.3"
   }
 }
