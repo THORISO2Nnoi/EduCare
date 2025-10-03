@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "educare-backend",
   "version": "1.0.0",
   "description": "Educare backend",
@@ -15,5 +16,33 @@
     "dotenv": "^16.3.1",
     "jsonwebtoken": "^9.0.2",
     "bcryptjs": "^2.4.3"
+=======
+  "name": "educare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THORISO2Nnoi/EduCare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THORISO2Nnoi/EduCare/issues"
+  },
+  "homepage": "https://github.com/THORISO2Nnoi/EduCare#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.0"
+>>>>>>> bfcb21be12b7f2394e850c1e052ca1e3c575052a
   }
 }
