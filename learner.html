@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learner Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Educare Learner Dashboard</h2>
+    <div class="bell" id="bell">
+      🔔 <span id="bellCount"></span>
+    </div>
+    <button class="logoutBtn">Logout</button>
+  </div>
+
+  <div class="container">
+    <h3>Your Tasks</h3>
+    <ul id="taskList"></ul>
+
+    <h3>Add Your Own Task (Max 5/day)</h3>
+    <input id="learnerTaskInput" placeholder="New Task">
+    <input id="learnerTimeInput" type="time">
+    <button id="learnerAddTaskBtn">Add My Task</button>
+
+    <h3>Rewards</h3>
+    <div id="rewards"></div>
+  </div>
+
+  <!-- Notifications -->
+  <div id="notificationPanel" style="display:none;">
+    <h3>Reminders</h3>
+    <ul id="reminderList"></ul>
+    <button id="closeNotifications">Close</button>
+  </div>
+
+  <script src="js/learner.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parent Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h2>Educare Parent Dashboard</h2>
+    <button class="logoutBtn">Logout</button>
+  </div>
+  
+  <div class="container">
+    <h3>Add Child</h3>
+    <input type="text" id="childName" placeholder="Child Name">
+    <button id="addChildBtn">Add Child</button>
+
+    <h3>Select Child</h3>
+    <select id="childSelect"></select>
+
+    <h3>Add Task</h3>
+    <input type="text" id="taskInput" placeholder="Task for child">
+    <input id="timeInput" type="time">
+    <button id="addTaskBtn">Add Task</button>
+
+    <h3>Send Reminder</h3>
+    <input type="text" id="reminderInput" placeholder="Reminder for child">
+    <button id="addReminderBtn">Send Reminder</button>
+
+    <h3>Progress</h3>
+    <ul id="progressList"></ul>
+  </div>
+
+  <script src="js/parent.js"></script>
+</body>
+</html>
