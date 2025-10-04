@@ -12,6 +12,12 @@ router.post("/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
+    // Check if email already exists
+    const existingParent = await Parent.findOne({ email });
+    if (existingParent) {
+      return res.status(400).json({ error: "Email already registered" });
+    }
+
     // Hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
