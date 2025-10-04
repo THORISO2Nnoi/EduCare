@@ -1,10 +1,11 @@
 const express = require("express");
+const bcrypt = require("bcryptjs");
+
 const router = express.Router();
 const Parent = require("../models/Parent");
 const Child = require("../models/Child");
 const Task = require("../models/Task");
 const Reminder = require("../models/Reminder");
-const bcrypt = require("bcryptjs");
 
 // Register a new parent
 router.post("/register", async (req, res) => {
