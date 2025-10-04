@@ -5,6 +5,22 @@ const Child = require("../models/Child");
 const Task = require("../models/Task");
 const Reminder = require("../models/Reminder");
 
+// POST /api/parent/register
+router.post("/register", async (req, res) => {
+  try {
+    const { name, email, password } = req.body;
+    const hashed = await bcrypt.hash(password, 10);
+    const parent = await Parent.create({ name, email, password: hashed });
+    res.status(201).json({ message: "Parent registered", parent });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/parent/login
+router.post("/login", async (req, res) => {
+  // login logic
+});
 // ➕ Add child
 router.post("/add-child", async (req, res) => {
   try {
