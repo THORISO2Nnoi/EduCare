@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+require("dotenv").config(); // Load .env variables
 
 const app = express();
 
@@ -9,15 +10,12 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB connection 
-mongoose.connect(
-  "mongodb+srv://THORISO:BK8Jf46NaaJiwnZq@cluster0.src4n6y.mongodb.net/Educare_Learners?retryWrites=true&w=majority",
-  {
-    dbName: "Educare_Learners",
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-)
+// MongoDB connection
+mongoose.connect(process.env.MONGO_URI, {
+  dbName: "Educare_Learners",
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 .then(() => console.log("✅ MongoDB connected to Educare_Learners"))
 .catch((err) => {
   console.error("❌ MongoDB connection error:", err.message);
