@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+mongoose.set('strictQuery', true);
 const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config(); // Load .env variables
